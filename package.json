@@ -12,6 +12,7 @@
   "scripts": {
     "prepublishOnly": "npm run build && npm run tests-only",
     "pretest": "bower install",
+    "install": "npm run build",
     "build": "rollup --config",
     "test": "npm run lint && npm run jscs && npm run tests-only",
     "test-ci": "npm run pretest && npm run build && npm run lint && npm run jscs && npm run tests-only-ci",
